@@ -1,0 +1,120 @@
+{
+    "app": {
+        "name": "Egypt election data"
+    },
+    "menu": {
+        "pa2011": "Parliamentary election 2011",
+        "pr2012": "Presidential election 2012",
+        "r2012": "Referendum 2012",
+        "r2014": "Referendum 2014",
+        "highlights": "Highlights",
+        "about": "About"
+    },
+    "candidates": {
+        "C1": "Abou El Ezz Hariri",
+        "C2": "Mohamad Fawzi",
+        "C3": "Ahmad Houssam",
+        "C4": "Amr Moussa",
+        "C5": "Aboul Futuh",
+        "C6": "Bastawissi Hichem",
+        "C7": "Mahmoud Houssam",
+        "C8": "Mohamed Salim Al Awa",
+        "C9": "Ahmed Chafik",
+        "C10": "Hamdeen Sabahi",
+        "C11": "Abdallah Al achal",
+        "C12": "Khaled Ali",
+        "C13": "Mohamed Morsi"
+    },
+    "data": {
+        "districts": {
+            "0": "Total",
+            "1": "Out of the country",
+            "19": "Cairo",
+            "27": "Alexandria",
+            "35": "Port Said",
+            "43": "Suez",
+            "51": "Damietta",
+            "61": "Dakahlia",
+            "78": "Sharqia",
+            "86": "Qalyubia",
+            "94": "Kafr el-Sheikh",
+            "108": "Gharbia",
+            "116": "Manufia",
+            "124": "Buheira",
+            "132": "Ismailya",
+            "141": "Giza",
+            "159": "Beni Suef",
+            "167": "Fayum",
+            "175": "Menya",
+            "183": "Assiut",
+            "191": "Souhag",
+            "205": "Qena",
+            "213": "Aswan",
+            "221": "Red Sea",
+            "231": "Wadi al-Jadid",
+            "248": "Marsa Matrouh",
+            "256": "North Sinai",
+            "264": "South Sinai",
+            "311": "Luxor"
+        },
+        "tableHeader": {
+            "districtname": "District name",
+            "eligibleVoters": "Eligible voters",
+            "validVotes": "Valid votes",
+            "invalidVotes": "Invalid votes  ",
+            "turnout": "Turnout",
+            "yes": "Yes",
+            "yesp": "Yes percentage",
+            "no": "No",
+            "nop": "No percentage"
+        }
+    },
+    "buttons": {
+        "round1": "Round 1",
+        "round2": "Round 2",
+        "shape": "Shape file",
+        "rawcsv": "Raw data (csv)",
+        "rawxls": "Raw data (xls)",
+        "tilemill": "Tilemill data layer",
+        "formattedcsv": "Formatted data (csv)",
+        "formattedxls": "Formatted data (xls)",
+        "variation": "View variation"
+    },
+    "headers": {
+        "eligible": "ELIGIBLE VOTERS",
+        "valid": "VALID VOTES",
+        "invalid": "INVALID VOTES",
+        "turnout": " turnout",
+        "aboutdata": "About the data",
+        "fullresults": "Full results",
+        "rounds": "Round 1 / Round 2",
+        "variation": "variation",
+        "round1voters": "Round 1 votes",
+        "round2voters": "Round 2 votes",
+        "pchart": "Candidates' support in each round",
+        "pchart2": "Candidates' support",
+        "yesnovotes": "Yes/No Votes",
+        "resultsonthemap": "Results on the map",
+        "highchart": "Percentage of votes and turnout in recent elections",
+        "vote": "vote",
+        "votes": " votes",
+        "downloaddata": "Download the data",
+        "winners": "Top Candidates",
+        "total": "National total : "
+    },
+    "texts": {
+        "round1about": "dummy round 1 about text",
+        "round1detailsabout": "dummy round 1 details about text",
+        "round2about": " dummy round 2 about data text",
+        "round2detailabout": "dummy round 2 details about text",
+        "referendum12about": "dummy referendum about text",
+        "referendumdetailabout": "dummy referendum detail about text",
+        "referendum14about": "dummyreferendum 2014 about text"
+    },
+    "pages": {
+        "abouttitle": "About page title",
+        "aboutcontent": "This website... dummy content ",
+        "notfounddesc": "The page you are looking for is not here ",
+        "notfoundlink": "Go to Home page "
+    }
+}
