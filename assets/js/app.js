@@ -12,7 +12,6 @@ angular.module('eedApp', [
 config(['$routeProvider','$locationProvider', function($routeProvider, $locationProvider) {
   $routeProvider.when('/', {templateUrl: 'partials/index.html'/*, controller: 'parController'*/});
   $routeProvider.when('/presidential2012', {redirectTo:'/presidential2012/round1'});
-  $routeProvider.when('/parliamentary2011', {templateUrl: 'partials/parlimentary11.html', controller: 'parController'});
   $routeProvider.when('/presidential2012/round1', {templateUrl: 'partials/presidential12/round1.html', controller: 'presControllerRound1'});
   $routeProvider.when('/presidential2012/round1/:id', {templateUrl: 'partials/presidential12/rnd1details.html', controller: 'presControllerRound1details'});
   $routeProvider.when('/presidential2012/round2', {templateUrl: 'partials/presidential12/round2.html', controller: 'presControllerRound2'});
