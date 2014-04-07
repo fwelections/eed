@@ -19,6 +19,7 @@ $(document).ready(function () {
         debug: true
         }, function() {
         $(".top-bar").i18n();
+         $(".partials").i18n();    
 
     });
     

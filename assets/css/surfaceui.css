@@ -1,8 +1,11 @@
 @import url(font-lato.css);
 
 @import url(font-awesome.css);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700); 
+
 
 body                                 {
+                                            font-family: "Open Sans", Helvetica, Arial, sans-serif;
                                             background:#EFEFEF;
                                         }
 

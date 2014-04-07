@@ -1,0 +1,101 @@
+<div class="row">
+   <div class="large-3 small-6 columns">
+      <div class="block  added-margin">
+        <div class="block-body">    
+            <div class="block-title" data-i18n="headers.eligible"></div>	
+            <div class="heading">
+             <span class="animate-number" data-value="{{results[28].Voters}}" data-animation-duration="1200">0</span>
+            </div>
+            <div class="progress transparent progress-small no-radius">
+                    <div class="progress-bar animate-progress-bar" data-percentage="100%"></div>
+            </div>					
+            
+        </div>	
+     </div>
+   </div>
+   <div class="large-3 small-6 columns">
+       <div class="block  added-margin">
+				 <div class="block-body">	
+					<div class="block-title" data-i18n="headers.valid">
+						 
+					</div>	
+					<div class="heading">
+						<span class="animate-number" data-value="{{results[28].Valid}}" data-animation-duration="1000">0</span>	
+					</div>
+					<div class="progress transparent progress-small no-radius">
+							<div class="progress-bar  animate-progress-bar" data-percentage="{{results[28].Validp}}%" ></div>
+					</div>				
+					
+				 </div>
+				</div>
+   </div>
+   <div class="large-3 small-6 columns">
+       		<div class="block  added-margin">
+				<div class="block-body">
+				 	
+					<div class="block-title" data-i18n="headers.invalid">
+			 
+					</div>	
+					<div class="heading">
+						 <span class="animate-number" data-value="{{results[28].Invalid}}" data-animation-duration="1200">0</span>	
+					</div>
+					<div class="progress transparent progress-white progress-small no-radius">
+						<div class="progress-bar  animate-progress-bar" data-percentage="{{results[28].Invalidp}}%" ></div>
+					</div>
+				
+				</div>
+				</div>
+   </div>
+    <div class="large-3 small-6 columns">
+       <div class="block  added-margin">
+				  <div class="block-body">
+						
+					<div class="block-title" data-i18n="headers.turnout">
+						 
+					</div>	
+					<div class="row-fluid">
+						<div class="heading">
+							<span class="animate-number"  data-value="{{results[28].Percentage}}" data-animation-duration="700">0</span>	
+						</div>
+						<div class="progress transparent progress-white progress-small no-radius">
+							<div class="progress-bar  animate-progress-bar" data-percentage="{{results[28].Percentage}}"></div>
+						</div>
+					</div>
+					
+					
+				 </div>
+				</div>
+   </div> 
+</div>
+<script type="text/javascript">
+        setTimeout(function() {
+            $('.animate-number').each(function(){
+		    $(this).animateNumbers($(this).attr("data-value"), true, parseInt($(this).attr("data-animation-duration")));	
+            });
+                $('.animate-progress-bar').each(function(){
+                     $(this).css('width', $(this).attr("data-percentage"));  
+                }) ;
+ 
+         	$('.grid .tools .collapse, .grid .tools .expand').on('click', function () {
+            var el = jQuery(this).parents(".grid").children(".grid-body");
+            if (jQuery(this).hasClass("collapse")) {
+                jQuery(this).removeClass("collapse").addClass("expand");
+                el.slideUp(200);
+            } else {
+                jQuery(this).removeClass("expand").addClass("collapse");
+                el.slideDown(200);
+            }
+        });		
+        
+      
+    
+         //switchLayer("moussa");
+
+                       
+        }, 500);
+     setTimeout(function() {
+	  $(".partials").i18n();
+
+  }, 600);
+
+</script>
