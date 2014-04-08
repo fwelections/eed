@@ -104,8 +104,8 @@ margin-top: 60px;
 .block > .block-body > .description{
 	font-size:12px;
 	display:block;
-	color:#fff;	
-	 display: table-cell; 
+    color:#8B91A0;
+ 	 display: table-cell; 
 	vertical-align: middle; 
 	-webkit-font-smoothing:antialiased;
 }
@@ -167,6 +167,51 @@ margin-top: 60px;
 }
 .progress.progress-small{
 	height: 6px;
+}
+ul.progress-list{
+	list-style:none;	
+	margin:40px 5px 23px 0;
+	padding: 0;
+}
+ul.progress-list li .details-wrapper{
+	display:inline-block;
+	float:left;
+
+}
+
+ul.progress-list li .details-wrapper .name{
+	display:block;
+	color:#000;
+	font-size:13px
+}
+
+ul.progress-list li .details-wrapper .description{
+	display:block;
+	color:#9a9a9a;
+	font-size:12px
+}
+ul.progress-list li .details-status{
+	display:inline-block;
+	background-color:#e5e9ec;
+	color:#5c6370;
+	font-size:11px;
+	padding:6px;	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+ul.progress-list li  .progress{
+	margin-top:10px;
+}
+.details-status-single{
+	display:inline-block;
+	background-color:#e5e9ec;
+	color:#5c6370;
+	font-size:11px;
+	padding:6px;	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
 .info {
     clear: both;
