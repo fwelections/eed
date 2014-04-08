@@ -33,6 +33,11 @@ p {
     line-height	:19.5px;
 
 }
+ul, ol, dl {
+font-size: 13px;
+list-style-position: outside;
+font-family: inherit;
+}
 h4 {
     line-height: 22px;
 }
