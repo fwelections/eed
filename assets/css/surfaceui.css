@@ -535,10 +535,12 @@ a:focus                                 {
 button,
 .button                                 {
                                             cursor: pointer;
-                                            font-family: inherit;
-                                            font-weight: bold;
-                                            line-height: 1;
-                                            margin: 0 0 1.25em;
+                                            margin-bottom: 0;
+                                            font-family: "Open Sans",Helvetica,Arial,sans-serif;
+                                            font-size:14px !important;
+                                            padding: 7px 12px 9px;
+                                            text-align: center;
+                                            text-shadow: none;
                                             position: relative;
                                             text-decoration: none;
                                             text-align: center;
@@ -546,14 +548,11 @@ button,
                                             font-size: 1em;
                                             background-color: #bdc3c7;
                                             color: white;
-                                            border: none;
-                                            font-size: 15px;
-                                            font-weight: normal;
-                                            line-height: 1.4;
-                                            padding: 10px 15px;
+                                            vertical-align: middle;
                                             -webkit-font-smoothing: subpixel-antialiased;
                                             -webkit-transition: 0.25s linear;
                                             transition: 0.25s linear;
+    
                                         }
 
 button:hover,
@@ -591,7 +590,7 @@ button:focus,
 
 .button.primary                         {
                                             color: #ffffff;
-                                            background-color: #1abc9c;
+                                            background-color: #15aa9e;
                                         }
 
 .button.primary:hover,
@@ -685,8 +684,8 @@ button:focus,
                                         }
 
 .button.secondary                       {
-                                            color: #ffffff;
-                                            background-color: #34495e;
+                                            background-color: #1F3853;
+                                            color: #FFFFFF;
                                         }
 
 .button.secondary:hover,
