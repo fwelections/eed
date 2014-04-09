@@ -30,7 +30,7 @@ p {
     font-weight:	400;
     font-style	:normal;
     color	:#6F7B8A;
-    line-height	:19.5px;
+    line-height	:8.5px;
 
 }
 ul, ol, dl {
@@ -411,34 +411,7 @@ font-size: 16px;
     width: 10px;
 }
 
-.cards .controller a.config{
-    background-position: -3px -32px;
-    height: 22px;
-    width: 22px;
 
-}
-
-.cards .controller  a.reload{
-    background-position: -37px -38px;
-    height: 10px;
-    top: -5px;
-    width: 12px;
-}
-
- .cards .controller a.expand{
-	background-position: -123px -11px;
-	width: 10px;
-	height: 6px;
-		top:-5px;
-}
-
-.cards .controller  a:hover.collapse{
-	background-position: -95px -40px;
-    height: 7px;
-    top: -5px;
-    width: 9px;
-	
-}
  .cards .controller  a:hover.remove {
     background-position: -66px -9px;
     height: 10px;
@@ -488,15 +461,99 @@ font-size: 16px;
 
 }
 
-.cards .cards-title.dark .controller  a.reload{
-    background-position: -38px -9px;
-    height: 10px;
-    top: -5px;
-    width: 12px;
+.single-colored-cards{
+	height:auto;
 }
-.cards .cards-title.dark .controller  a.reload:hover, .cards .cards-title.dark .controller  a.remove:hover{
-	opacity:0.5;
+.single-colored-cards h3{
+	font-size:22px;
+	line-height: 32.5px;
 }
+.single-colored-cards .heading{
+	padding: 8px 15px;
+	padding-bottom: 4px;
+	background-color:#fff;
+}
+.single-colored-cards .heading h4{
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+.single-colored-cards .content-wrapper{
+	padding: 15px 27px;
+	padding-bottom: 20px;
+}
+
+.single-colored-cards .content-wrapper i{
+	color:#fff;
+}
+
+.single-colored-cards .content-wrapper.red{
+	background-color:#f35958;
+}
+.single-colored-cards .content-wrapper.purple{
+	background-color:#A272B2;
+}
+.single-colored-cards .content-wrapper.green{
+	background-color:#0aa699;
+}
+
+.single-colored-cards .content-wrapper.blue{
+	background-color:#0090d9;
+}
+.single-colored-cards .content-wrapper.yellow{
+	background-color:#F0AD4E;
+}
+
+.single-colored-cards .content-wrapper.red p{
+	color:#832929;
+}
+
+.single-colored-cards .content-wrapper.green p{
+	color:#505458;
+}
+
+.single-colored-cards .content-wrapper.blue p{
+	color:#0a5174;
+}
+.single-colored-cards .content-wrapper .mini-logo{
+	margin-bottom: 15px;
+}
+
+.single-colored-cards .content-wrapper .h3{
+	margin-bottom: 15px;
+}
+
+.single-colored-cards .content-wrapper .mini-logo{
+	margin-bottom: 15px;
+}
+.text-white {
+    color: #FFFFFF !important;
+}
+.color-bands.green{
+	background-color:#0aa699
+}
+
+.color-bands.purple{
+	background-color:#a272b2
+}
+
+.color-bands.red{
+	background-color:#f35958
+}
+.color-bands.blue{
+	background-color:#14b9d6
+} 
+.color-bands.yellow{
+	background-color:#FBB05E
+} 
+.padding-none {
+padding: 0 !important;
+}
+ 
+.button-purple {
+    background-color: #A272B2 !important;
+    color: #FFFFFF !important;
+}
+
 .block-title .tools > a {
     display: inline-block;
     margin-left: 5px;
@@ -1000,8 +1057,11 @@ z-index: 2;
 }
 .innerAll{
     
-padding:15px;    
+padding:10px;    
     } 
-.full-band{
- width:100% !important;    
-    }  
+.full-band {
+width: 100% !important;
+height: 4px;
+margin-top: 25px;
+margin-bottom: 25px;
+}
