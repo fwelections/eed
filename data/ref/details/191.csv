@@ -1,4 +1,4 @@
-district_name_en,district_name,Voters,Valid,Invalid,Percentage,Yes,No,yesp,nop
+district_name_en,district_name,yesp,nop,Voters,Valid,Invalid,Percentage,Yes,No
 Sohag 1,سوهاج أول,62.3,37.7,91344,30808,585,34.4,19199,11609
 Sohag district,مركز سوهاج,85.2,14.8,247466,55267,1274,22.8,47103,8164
 Ikhmeem district,مركز أخميم,86.7,13.3,185312,53289,1038,29.3,46212,7077

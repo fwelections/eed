@@ -1,4 +1,4 @@
-district_name_en,district_name,Voters,Valid,Invalid,Percentage,Yes,No,yesp,nop
+district_name_en,district_name,yesp,nop,Voters,Valid,Invalid,Percentage,Yes,No
 Assiout 1,أسيوط أول,57.3,42.7,162117,58507,759,36.6,33518,24989
 Assiout 2,أسيوط ثان,53,47,104655,40685,646,39.5,21580,19105
 Assiout district,مركز أسيوط,84.8,15.2,241887,65730,1537,27.8,55709,10021

@@ -1,4 +1,4 @@
-district_name_en,district_name,Voters,Valid,Invalid,Percentage,Yes,No,yesp,nop
+district_name_en,district_name,yesp,nop,Voters,Valid,Invalid,Percentage,Yes,No
 Ismailia 1,الإسماعيلية أول,48.5,51.5,40290,16440,152,41.2,7975,8465
 Ismailia 2,الإسماعيلية ثان,60.9,39.1,150561,56237,763,37.9,34276,21961
 Ismailia district,مركز الإسماعيلية,83.7,16.3,81676,29563,409,36.7,24753,4810
