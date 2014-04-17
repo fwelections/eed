@@ -5,7 +5,7 @@ $(document).ready(function () {
         lng: 'ar',
         ns: { namespaces: ['ns.home'], defaultNs: 'ns.home'},
         useLocalStorage: false,
-        debug: true
+        debug: false
         }, function() {
         $(".top-bar").i18n();
 
@@ -16,7 +16,7 @@ $(document).ready(function () {
         lng: 'en',
         ns: { namespaces: ['ns.home'], defaultNs: 'ns.home'},
         useLocalStorage: false,
-        debug: true
+        debug: false
         }, function() {
         $(".top-bar").i18n();
          $(".partials").i18n();    
@@ -30,7 +30,7 @@ $(document).ready(function () {
         lng: 'en',
         ns: { namespaces: ['ns.home'], defaultNs: 'ns.home'},
         useLocalStorage: false,
-        debug: true
+        debug: false
     }, function() {
        location.reload();
       
@@ -41,7 +41,7 @@ $(document).ready(function () {
         lng: 'ar',
         ns: { namespaces: ['ns.home'], defaultNs: 'ns.home'},
         useLocalStorage: false,
-        debug: true
+        debug: false
     }, function() {
        location.reload();
       
@@ -51,11 +51,7 @@ $(document).ready(function () {
     
 	
 });
-function calculateHeight(){
-		var contentHeight=parseInt($('.page-content').height());
-		if(911 > contentHeight){	
- 		}	
-}
+
 function loadMap(url)
 {
     var json = null;
