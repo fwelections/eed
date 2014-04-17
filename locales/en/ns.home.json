@@ -8,7 +8,8 @@
         "r2012": "Referendum 2012",
         "r2014": "Referendum 2014",
         "highlights": "Highlights",
-        "about": "About"
+        "about": "About",
+        "lang": "Lang"
     },
     "candidates": {
         "C1": "Abou El Ezz Hariri",
@@ -109,7 +110,9 @@
         "round2detailabout":" On June 16-17, 2012, more than 25 million voters cast ballots in a presidential runoff election between Ahmed Chafik and Mohamed Morsi. Receiving slightly more than 51% of all valid ballots cast, Mohamed Morsi became the first elected president of post-revolution Egypt. <br/>The data used to power these visualizations was sourced from the website of the Supreme Presidential Election Commission in June 2012. The data was converted into CSV and GeoJSON formats by Democracy International. ",
         "referendum12about": "On December 15 and 22, 2012, more than 16 million voters cast ballots in a referendum on a draft constitution. The draft constitution, publicly supported by President Mohamed Morsi, was approved by 63.8% of voters.  <br/>The data used to power these visualizations was sourced from the website of the Supreme Presidential Election Commission in June 2012. The data was converted into CSV and GeoJSON formats by Democracy International.  ",
         "referendumdetailabout": "On December 15 and 22, 2012, more than 16 million voters cast ballots in a referendum on a draft constitution. The draft constitution, publicly supported by President Mohamed Morsi, was approved by 63.8% of voters.<br/>The data used to power these visualizations was sourced from the website of the Supreme Presidential Election Commission in June 2012. The data was converted into CSV and GeoJSON formats by Democracy International. ",
-        "referendum14about": "On January 14-15, 2014, more than 20 million voters cast ballots in a referendum on a draft constitution. The draft constitution, publicly supported by Field Marshal Abdel Fattah el-Sisi, was approved by 98.1% of voters.<br/>The data used to power these visualizations was sourced from the website of the Supreme Presidential Election Commission in June 2012. The data was converted into CSV and GeoJSON formats by Democracy International. "
+        "referendum14about": "On January 14-15, 2014, more than 20 million voters cast ballots in a referendum on a draft constitution. The draft constitution, publicly supported by Field Marshal Abdel Fattah el-Sisi, was approved by 98.1% of voters.<br/>The data used to power these visualizations was sourced from the website of the Supreme Presidential Election Commission in June 2012. The data was converted into CSV and GeoJSON formats by Democracy International. ",
+        "morsi":"Mohamed Morsi is the Chairman of the <a href='http://en.wikipedia.org/wiki/Freedom_and_Justice_Party_(Egypt)' title='Freedom and Justice Party (Egypt)'>Freedom and Justice Party</a> (FJP), a political party that was founded by the <a href='http://en.wikipedia.org/wiki/Muslim_Brotherhood' title='Muslim Brotherhood'>Muslim Brotherhood</a> after the <a href='http://en.wikipedia.org/wiki/2011_Egyptian_revolution' title=2011 Egyptian revolution'   >2011 Egyptian revolution</a>, since 30 April 2011.  He was a Member of Parliament from 2000 to 2005.",
+        "shafik":"<a href='http://en.wikipedia.org/wiki/Ahmed_Shafik' title='Ahmed Shafik'>Ahmed Shafik</a> officially launched his presidential campaign on 2 November 2011. He was the last <a href='http://en.wikipedia.org/wiki/Prime_Minister_of_Egypt' title='Prime Minister of Egypt'>Prime Minister</a> appointed by <a href='http://en.wikipedia.org/wiki/Hosni_Mubarak' title='Hosni Mubarak'>Hosni Mubarak</a> after the beginning of the <a href='http://en.wikipedia.org/wiki/2011_Egyptian_revolution' title='2011 Egyptian revolution' class='mw-redirect'>2011 revolution</a> in January. "
     },
     "pages": {
         "abouttitle": "About",

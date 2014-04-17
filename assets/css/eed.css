@@ -36,9 +36,19 @@ ul, ol, dl {
 font-size: 13px;
 list-style-position: outside;
 font-family: inherit;
-}
+ }
 h4 {
     line-height: 22px;
+}
+h5 {
+font-size: 1.0rem;
+}
+.spacing-bottom {
+margin-bottom: 30px !important;
+}
+.medium-padding{
+    padding:23px !important;
+
 }
 .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{
 	padding:12px;     
@@ -71,6 +81,7 @@ margin-top: 60px;
 }
 .logo {
     margin-right:20px;
+     margin-left:20px;
 }
 
 .semi-bold {
@@ -302,10 +313,7 @@ text-overflow: ellipsis;
 .navbar-brand , .navbar-brand:hover,.navbar-brand:focus {
 color:#999 !important;
 }
-.fa-arrows-h{
-margin-left: 5px;
-margin-right: 5PX;
-}
+
 .layout-ar{
 direction:rtl;
 
@@ -1042,10 +1050,19 @@ top: 55px;
 margin-left: 10%;
 }
     
- .text-center {
+ .center , .text-center {
     text-align:center;
 
-}     
+}
+.text-success{
+    
+color:#0AA699 !important
+
+}
+.c_name{
+color: black;
+font-weight: 400;
+}
 .easy-chart canvas{
 position: absolute;
 top: 0;
@@ -1059,8 +1076,23 @@ z-index: 2;
 padding:10px;    
     } 
 .full-band {
-width: 100% !important;
-height: 4px;
-margin-top: 25px;
-margin-bottom: 25px;
+    width: 100% !important;
+    height: 4px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.fa-arrows-h{
+display: inline-block;
+margin-left: 5px;
+position: relative;
+background: url('../img/icon/portlet-tray.png') no-repeat;
+transition: all 0.1s linear 0s;
+background-position: -152px -37px;
+width: 15px;
+height: 10px;
+}
+.stripped-list{
+
+    list-style-type:none;
+
 }
