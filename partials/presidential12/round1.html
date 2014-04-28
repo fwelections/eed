@@ -1,71 +1,71 @@
 <div class="row">
-   <div class="large-3 small-6 columns">
-      <div class="block  ">
-        <div class="block-body">    
-            <div class="block-title" data-i18n="headers.eligible"></div>	
-            <div class="heading">
-             <span class="animate-number" data-value="{{results[28].Voters}}" data-animation-duration="1200">0</span>
-            </div>
-            <div class="progress transparent progress-small no-radius">
-                    <div class="progress-bar animate-progress-bar" data-percentage="100%"></div>
-            </div>					
-            
-        </div>	
-     </div>
-   </div>
-   <div class="large-3 small-6 columns">
-       <div class="block  ">
-				 <div class="block-body">	
-					<div class="block-title" data-i18n="headers.valid">
-						 
-					</div>	
-					<div class="heading">
-						<span class="animate-number" data-value="{{results[28].Valid}}" data-animation-duration="1000">0</span>	
-					</div>
-					<div class="progress transparent progress-small no-radius">
-							<div class="progress-bar  animate-progress-bar" data-percentage="{{results[28].Validp}}%" ></div>
-					</div>				
-					
-				 </div>
-				</div>
-   </div>
-   <div class="large-3 small-6 columns">
-       		<div class="block  ">
-				<div class="block-body">
-				 	
-					<div class="block-title" data-i18n="headers.invalid">
-			 
-					</div>	
-					<div class="heading">
-						 <span class="animate-number" data-value="{{results[28].Invalid}}" data-animation-duration="1200">0</span>	
-					</div>
-					<div class="progress transparent progress-white progress-small no-radius">
-						<div class="progress-bar  animate-progress-bar" data-percentage="{{results[28].Invalidp}}%" ></div>
-					</div>
-				
-				</div>
-				</div>
-   </div>
     <div class="large-3 small-6 columns">
-       <div class="block  ">
-				  <div class="block-body">
-						
-					<div class="block-title" data-i18n="headers.turnout">
-						 
-					</div>	
-					<div class="row-fluid">
-						<div class="heading">
-							<span class="animate-number"  data-value="{{results[28].Percentage}}" data-animation-duration="700">0</span>	
-						</div>
-						<div class="progress transparent progress-white progress-small no-radius">
-							<div class="progress-bar  animate-progress-bar" data-percentage="{{results[28].Percentage}}"></div>
-						</div>
-					</div>
-					
-					
-				 </div>
-				</div>
-   </div> 
+        <div class="block  ">
+            <div class="block-body">
+                <div class="block-title" data-i18n="headers.eligible"></div>
+                <div class="heading">
+                    <span class="animate-number" data-value="{{results[28].Voters}}" data-animation-duration="1200">0</span>
+                </div>
+                <div class="progress transparent progress-small no-radius">
+                    <div class="progress-bar animate-progress-bar" data-percentage="100%"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="large-3 small-6 columns">
+        <div class="block  ">
+            <div class="block-body">
+                <div class="block-title" data-i18n="headers.valid">
+
+                </div>
+                <div class="heading">
+                    <span class="animate-number" data-value="{{results[28].Valid}}" data-animation-duration="1000">0</span>	
+                </div>
+                <div class="progress transparent progress-small no-radius">
+                    <div class="progress-bar  animate-progress-bar" data-percentage="{{results[28].Validp}}%"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="large-3 small-6 columns">
+        <div class="block  ">
+            <div class="block-body">
+
+                <div class="block-title" data-i18n="headers.invalid">
+
+                </div>
+                <div class="heading">
+                    <span class="animate-number" data-value="{{results[28].Invalid}}" data-animation-duration="1200">0</span>	
+                </div>
+                <div class="progress transparent progress-white progress-small no-radius">
+                    <div class="progress-bar  animate-progress-bar" data-percentage="{{results[28].Invalidp}}%"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="large-3 small-6 columns">
+        <div class="block  ">
+            <div class="block-body">
+
+                <div class="block-title" data-i18n="headers.turnout">
+
+                </div>
+                <div class="row-fluid">
+                    <div class="heading">
+                        <span class="animate-number" data-value="{{results[28].Percentage}}" data-animation-duration="700">0</span>	
+                    </div>
+                    <div class="progress transparent progress-white progress-small no-radius">
+                        <div class="progress-bar  animate-progress-bar" data-percentage="{{results[28].Percentage}}"></div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
 </div>
 <div class="row">
 
@@ -73,199 +73,250 @@
         <div class="maps-container legend-up ">
             <div id="map"></div>
             <div class="map-legend-new">
-                <div class='legend-title'>Candidate votes share </div>
+                <div class='legend-title' data-i18n="headers.candidatemap"></div>
                 <div class='legend-scale'>
-                  <ul class='legend-labels'>
-                    <li><span style='background:#45b0e9;'></span>0-10%</li>
-                    <li><span style='background:#0090d9;'></span>11-24%</li>
-                    <li><span style='background:#0c5b90;'></span> >25%</li>
-                  </ul>
+                    <ul class='legend-labels'>
+                        <li><span style='background:#45b0e9;'></span>0-10%</li>
+                        <li><span style='background:#0090d9;'></span>11-24%</li>
+                        <li><span style='background:#0c5b90;'></span> >25%</li>
+                    </ul>
                 </div>
             </div>
 
         </div>
         <div class="map-controls">
-          <a  data-map="moussa" class="active" data-i18n="candidates.C4"></a>
-          <a  data-map="futuh" data-i18n="candidates.C5"></a>
-          <a  data-map="shafik" data-i18n="candidates.C9"></a>
-          <a  data-map="sabahi" data-i18n="candidates.C10"></a>
-          <a  data-map="morsi" data-i18n="candidates.C13"></a>          
-        </div>	
-   </div>
-<div class="large-5 small-12 columns">
-  <div class="block info ">
-    <div class="block-title">
-        <h4 data-i18n="headers.aboutdata"></h4>							 
-	</div>
-	<div class="block-body" style="min-height: 275px;">
-	 
-     <div data-i18n="[html]texts.round1about"></div>
-	<div class="data-zone"><h4 data-i18n="headers.downloaddata"></h4>
-        <a href="./data/geom/egypt.geojson" download="egypt.geojson" target="_blank" class="button expand" data-i18n="buttons.shape"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;</a><br/>
-        <a href="./data/pround1/EG.csv" data-i18n="buttons.rawcsv" download="2012EP.csv" target="_blank" class="expand secondary button"><i class="fa fa-paste"></i> </a> <br/>
-        <a href="./data/mapsources/presidentialRnd1/candidates.geojson"   download="egypt.geojson"  target="_blank" class="primary button expand" data-i18n="buttons.tilemill"><i class="fa fa-download"></i>&nbsp;&nbsp; </a>         
-   </div> 
-							</div>
-						</div>
-</div>
+            <a data-map="moussa" class="active" data-i18n="candidates.C4"></a>
+            <a data-map="futuh" data-i18n="candidates.C5"></a>
+            <a data-map="shafik" data-i18n="candidates.C9"></a>
+            <a data-map="sabahi" data-i18n="candidates.C10"></a>
+            <a data-map="morsi" data-i18n="candidates.C13"></a>
+        </div>
+    </div>
+    <div class="large-5 small-12 columns">
+        <div class="block info ">
+            <div class="block-title">
+                <h4 data-i18n="headers.aboutdata"></h4>	
+            </div>
+            <div class="block-body" style="min-height: 275px;">
+
+                <div data-i18n="[html]texts.round1about"></div>
+                <div class="data-zone">
+                    <h4 data-i18n="headers.downloaddata"></h4>
+                    <a href="./data/geom/egypt.geojson" download="egypt.geojson" target="_blank" class="button expand" data-i18n="buttons.shape"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;</a>
+                    <br/>
+                    <a href="./data/pround1/EG.csv" data-i18n="buttons.rawcsv" download="2012EP.csv" target="_blank" class="expand secondary button"><i class="fa fa-paste"></i> </a> 
+                    <br/>
+                    <a href="./data/mapsources/presidentialRnd1/candidates.geojson" download="egypt.geojson" target="_blank" class="primary button expand" data-i18n="buttons.tilemill"><i class="fa fa-download"></i>&nbsp;&nbsp; </a> 
+                </div>
+            </div>
+        </div>
+    </div>
 
 </div>
 <!-- DATA TABLE -->
-    <div class="row">
-        <div class="large-12 small-12 columns">
-          <div class="block info">
+<div class="row">
+    <div class="large-12 small-12 columns">
+        <div class="block info">
             <div class="block-title">
-              <h4 data-i18n="headers.fullresults"> </h4>
+                <h4 data-i18n="headers.fullresults"> </h4>
             </div>
             <div class="block-body overflow-x">
-              <table cellpadding="0" cellspacing="0" border="0" class="table " id="table-full" width="100%" >
-                <thead>
-                  <tr>
-                    <th data-i18n="data.tableHeader.districtname"></th>
-                    <th data-i18n="data.tableHeader.eligibleVoters"></th>
-                    <th data-i18n="data.tableHeader.validVotes"></th>
-                    <th data-i18n="data.tableHeader.invalidVotes"></th>
-                    <th data-i18n="data.tableHeader.turnout"></th>  
-                    <th data-i18n="candidates.C1"></th>  
-                    <th data-i18n="candidates.C2"></th> 
-                    <th data-i18n="candidates.C3"></th>  
-                    <th data-i18n="candidates.C4"></th>  
-                    <th data-i18n="candidates.C5"></th>  
-                    <th data-i18n="candidates.C6"></th>  
-                    <th data-i18n="candidates.C7"></th>  
-                    <th data-i18n="candidates.C8"></th>  
-                    <th data-i18n="candidates.C9"></th>  
-                    <th data-i18n="candidates.C10"></th>  
-                    <th data-i18n="candidates.C11"></th>  
-                    <th data-i18n="candidates.C12"></th> 
-                    <th data-i18n="candidates.C13"></th>  
-                    </tr>
-                </thead>
-                <tbody>
-                  
-                    <tr class="odd gradeX" ng-repeat="result in results">
-                    <td ><a href="#/presidential2012/round1/{{result.did}}" data-i18n="data.districts.{{result.did}}"></a></td>
-                    <td>{{result.Voters}}</td>
-                    <td>{{result.Valid}}</td>
-                    <td class="center"> {{result.Invalid}}</td>
-                    <td class="center">{{result.Percentage}}</td>
-                    <td class="center">{{result.C1}}</td>
-                        <td class="center">{{result.C2}}</td>
-                        <td class="center">{{result.C3}}</td>
-                        <td class="center">{{result.C4}}</td>
-                        <td class="center">{{result.C5}}</td>
-                        <td class="center">{{result.C6}}</td>
-                        <td class="center">{{result.C7}}</td>
-                        <td class="center">{{result.C8}}</td>
-                        <td class="center">{{result.C9}}</td>
-                        <td class="center">{{result.C10}}</td>
-                        <td class="center">{{result.C11}}</td>
-                        <td class="center">{{result.C12}}</td>
-                        <td class="center">{{result.C13}}</td>
-                       
-                    </tr>
-                 
-                </tbody>
-              </table>
+                <table cellpadding="0" cellspacing="0" border="0" class="table " id="table-full" width="100%">
+                    <thead>
+                        <tr>
+                            <th data-i18n="data.tableHeader.districtname"></th>
+                            <th data-i18n="data.tableHeader.eligibleVoters"></th>
+                            <th data-i18n="data.tableHeader.validVotes"></th>
+                            <th data-i18n="data.tableHeader.invalidVotes"></th>
+                            <th data-i18n="data.tableHeader.turnout"></th>
+                            <th data-i18n="candidates.C1"></th>
+                            <th data-i18n="candidates.C2"></th>
+                            <th data-i18n="candidates.C3"></th>
+                            <th data-i18n="candidates.C4"></th>
+                            <th data-i18n="candidates.C5"></th>
+                            <th data-i18n="candidates.C6"></th>
+                            <th data-i18n="candidates.C7"></th>
+                            <th data-i18n="candidates.C8"></th>
+                            <th data-i18n="candidates.C9"></th>
+                            <th data-i18n="candidates.C10"></th>
+                            <th data-i18n="candidates.C11"></th>
+                            <th data-i18n="candidates.C12"></th>
+                            <th data-i18n="candidates.C13"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr class="odd gradeX" ng-repeat="result in results">
+                            <td>
+                                <a href="#/presidential2012/round1/{{result.did}}" data-i18n="data.districts.{{result.did}}"></a>
+                            </td>
+                            <td>{{result.Voters}}</td>
+                            <td>{{result.Valid}}</td>
+                            <td class="center">{{result.Invalid}}</td>
+                            <td class="center">{{result.Percentage}}</td>
+                            <td class="center">{{result.C1}}</td>
+                            <td class="center">{{result.C2}}</td>
+                            <td class="center">{{result.C3}}</td>
+                            <td class="center">{{result.C4}}</td>
+                            <td class="center">{{result.C5}}</td>
+                            <td class="center">{{result.C6}}</td>
+                            <td class="center">{{result.C7}}</td>
+                            <td class="center">{{result.C8}}</td>
+                            <td class="center">{{result.C9}}</td>
+                            <td class="center">{{result.C10}}</td>
+                            <td class="center">{{result.C11}}</td>
+                            <td class="center">{{result.C12}}</td>
+                            <td class="center">{{result.C13}}</td>
+
+                        </tr>
+
+                    </tbody>
+                </table>
             </div>
-          </div>
-       </div>
-      </div>
+        </div>
+    </div>
+</div>
 <script type="text/javascript">
-        setTimeout(function() {
-            $('.animate-number').each(function(){
-		    $(this).animateNumbers($(this).attr("data-value"), true, parseInt($(this).attr("data-animation-duration")));	
-            });
-                $('.animate-progress-bar').each(function(){
-                     $(this).css('width', $(this).attr("data-percentage"));  
-                }) ;
-      
-    
-         switchLayer("moussa");
+    // var currentTile= 'radproject.95vrjcei'   ;   	
+    var mapr1 = L.mapbox.map('map', 'tunisia.gjhjd7gn')
+        .setView([27.440, 32.311], 6);
 
-                       
-        }, 500);
-     setTimeout(function() {
-	  $(".partials").i18n();
 
-  }, 600);
-   var currentTile= 'radproject.95vrjcei'   ;   	
-	 var mapr1=L.mapbox.map('map', 'tunisia.gjhjd7gn')
-    .setView([27.440, 32.311], 6);
-	
-    
-    
-     var layers = [{
-                name: 'moussa',
-                layer: L.layerGroup([
-                L.mapbox.tileLayer('radproject1.gtsrwwmi'),
-                L.mapbox.gridLayer('radproject1.gtsrwwmi')])
-                },
-                {
-                name: 'futuh',
-                layer: L.layerGroup([
-                L.mapbox.tileLayer('radproject1.fud0wwmi'),
-                L.mapbox.gridLayer('radproject1.fud0wwmi')])
-                },
-                {
-                name: 'shafik',
-                layer: L.layerGroup([
-                L.mapbox.tileLayer('radproject1.yahy3nmi'),
-                L.mapbox.gridLayer('radproject1.yahy3nmi')])
-                },
-                {
-                name: 'sabahi',
-                layer: L.layerGroup([
-                L.mapbox.tileLayer('radproject.cnoibfpf'),
-                L.mapbox.gridLayer('radproject.cnoibfpf')])
-                },
-                {
-                name: 'morsi',
-                layer: L.layerGroup([
-                L.mapbox.tileLayer('radproject.nejva60b'),
-                L.mapbox.gridLayer('radproject.nejva60b')])
-                }
-                ];
-                var gridControl = null;
-                function switchLayer(mapname) {
-               
-                $.each(layers, function(i, layer) {
-                layer.control = L.mapbox.gridControl(layer.layer.getLayers()[1]);
-                //going through layers comparing the name property to the mapname , if found remove the previous one and add the new one
-                if (layer.name==mapname){
-                 //found our new layer now we remove old one
-                $.each(layers, function(i, l) {
-                if (l.layer !== layer.layer && mapr1.hasLayer(l.layer)) {
-                 mapr1.removeLayer(l.layer.getLayers()[0]); 
-                mapr1.removeLayer(l.layer.getLayers()[1]);      
-                mapr1.removeLayer(l.layer);
-                }
+
+    var layers = [{
+        name: 'moussa',
+        layer: L.layerGroup([
+            L.mapbox.tileLayer('radproject1.gtsrwwmi'),
+            L.mapbox.gridLayer('radproject1.gtsrwwmi')
+        ])
+    }, {
+        name: 'futuh',
+        layer: L.layerGroup([
+            L.mapbox.tileLayer('radproject1.fud0wwmi'),
+            L.mapbox.gridLayer('radproject1.fud0wwmi')
+        ])
+    }, {
+        name: 'shafik',
+        layer: L.layerGroup([
+            L.mapbox.tileLayer('radproject1.yahy3nmi'),
+            L.mapbox.gridLayer('radproject1.yahy3nmi')
+        ])
+    }, {
+        name: 'sabahi',
+        layer: L.layerGroup([
+            L.mapbox.tileLayer('radproject.cnoibfpf'),
+            L.mapbox.gridLayer('radproject.cnoibfpf')
+        ])
+    }, {
+        name: 'morsi',
+        layer: L.layerGroup([
+            L.mapbox.tileLayer('radproject.nejva60b'),
+            L.mapbox.gridLayer('radproject.nejva60b')
+        ])
+    }];
+    var layers_ar = [{
+        name: 'moussa',
+        layer: L.layerGroup([
+            L.mapbox.tileLayer('tunisia.vsd2e3yp'),
+            L.mapbox.gridLayer('tunisia.vsd2e3yp')
+        ])
+    }, {
+        name: 'futuh',
+        layer: L.layerGroup([
+            L.mapbox.tileLayer('tunisia.nzc7s8x7'),
+            L.mapbox.gridLayer('tunisia.nzc7s8x7')
+        ])
+    }, {
+        name: 'shafik',
+        layer: L.layerGroup([
+            L.mapbox.tileLayer('tunisia.saidneff'),
+            L.mapbox.gridLayer('tunisia.saidneff')
+        ])
+    }, {
+        name: 'sabahi',
+        layer: L.layerGroup([
+            L.mapbox.tileLayer('tunisia.fe9nlwrs'),
+            L.mapbox.gridLayer('tunisia.fe9nlwrs')
+        ])
+    }, {
+        name: 'morsi',
+        layer: L.layerGroup([
+            L.mapbox.tileLayer('tunisia.eklsoxzw'),
+            L.mapbox.gridLayer('tunisia.eklsoxzw')
+        ])
+    }];
+    var gridControl = null;
+
+    function switchLayer(mapname) {
+
+        $.each(layers, function (i, layer) {
+            layer.control = L.mapbox.gridControl(layer.layer.getLayers()[1]);
+            //going through layers comparing the name property to the mapname , if found remove the previous one and add the new one
+            if (layer.name == mapname) {
+                //found our new layer now we remove old one
+                $.each(layers, function (i, l) {
+                    if (l.layer !== layer.layer && mapr1.hasLayer(l.layer)) {
+                        mapr1.removeLayer(l.layer.getLayers()[0]);
+                        mapr1.removeLayer(l.layer.getLayers()[1]);
+                        mapr1.removeLayer(l.layer);
+                    }
                 });
-                if(gridControl !=null)
-                mapr1.removeControl(gridControl);
+                if (gridControl != null)
+                    mapr1.removeControl(gridControl);
                 layer.layer.addTo(mapr1);
                 gridControl = layer.control.addTo(mapr1);
-                }
-                
-                 
+            }
+
+
+        });
+    }
+
+    function switchLayer_ar(mapname) {
+
+        $.each(layers_ar, function (i, layer) {
+            layer.control = L.mapbox.gridControl(layer.layer.getLayers()[1]);
+            //going through layers comparing the name property to the mapname , if found remove the previous one and add the new one
+            if (layer.name == mapname) {
+                //found our new layer now we remove old one
+                $.each(layers_ar, function (i, l) {
+                    if (l.layer !== layer.layer && mapr1.hasLayer(l.layer)) {
+                        mapr1.removeLayer(l.layer.getLayers()[0]);
+                        mapr1.removeLayer(l.layer.getLayers()[1]);
+                        mapr1.removeLayer(l.layer);
+                    }
                 });
-                }
-    
-                    
-    
-    
-	$(".map-controls a").on( "click", function(e) {
-          $('.active').removeClass('active');
-          e.preventDefault();
-          e.stopPropagation();
-         var mapTile=$( this ).attr("data-map");
-        if( typeof mapr1 != 'undefined')
-        {   
-             switchLayer(mapTile);
-            this.className = 'active';
+                if (gridControl != null)
+                    mapr1.removeControl(gridControl);
+                layer.layer.addTo(mapr1);
+                gridControl = layer.control.addTo(mapr1);
+            }
 
+
+        });
+    }
+
+
+
+    $(".map-controls a").on("click", function (e) {
+        $('.active').removeClass('active');
+        e.preventDefault();
+        e.stopPropagation();
+        var mapTile = $(this).attr("data-map");
+        if (i18n.detectLanguage() == 'ar') {
+            if (typeof mapr1 != 'undefined') {
+                switchLayer_ar(mapTile);
+                this.className = 'active';
+
+            }
+        } else {
+
+            if (typeof mapr1 != 'undefined') {
+                switchLayer(mapTile);
+                this.className = 'active';
+
+            }
         }
-        
-     });    
 
+
+    });
 </script>

@@ -101,7 +101,9 @@
         "votes":"أصوات",
         "turnout":"نسبة المشاركة",
         "downloaddata": "تحميل البيانات",
-        "winners":"الفائزون"
+        "winners":"الفائزون",
+        "candidatemap":"نسبة الأصوات المتحصل عليها المترشح  "
+
     },
     "texts":{
         "round1about":"dummy round 1 about text",

@@ -1,59 +1,70 @@
 $(document).ready(function () {
-    if (i18n.detectLanguage() =='ar') {
-      $('body').addClass('layout-ar'); 
-         $.i18n.init({
-        lng: 'ar',
-        ns: { namespaces: ['ns.home'], defaultNs: 'ns.home'},
-        useLocalStorage: false,
-        debug: false
-        }, function() {
-        $(".top-bar").i18n();
-
-    });
-    } else {
-    
+    if (i18n.detectLanguage() == 'ar') {
+        $('body').addClass('layout-ar');
         $.i18n.init({
-        lng: 'en',
-        ns: { namespaces: ['ns.home'], defaultNs: 'ns.home'},
-        useLocalStorage: false,
-        debug: false
-        }, function() {
-        $(".top-bar").i18n();
-         $(".partials").i18n();    
+            lng: 'ar',
+            ns: {
+                namespaces: ['ns.home'],
+                defaultNs: 'ns.home'
+            },
+            useLocalStorage: false,
+            debug: false
+        }, function () {
+            $(".top-bar").i18n();
 
-    });
-    
+        });
+    } else {
+
+        $.i18n.init({
+            lng: 'en',
+            ns: {
+                namespaces: ['ns.home'],
+                defaultNs: 'ns.home'
+            },
+            useLocalStorage: false,
+            debug: false
+        }, function () {
+            $(".top-bar").i18n();
+            $(".partials").i18n();
+
+        });
+
     }
 
-    $("#english_link").on( "click", function() {
-      $.i18n.init({
-        lng: 'en',
-        ns: { namespaces: ['ns.home'], defaultNs: 'ns.home'},
-        useLocalStorage: false,
-        debug: false
-    }, function() {
-       location.reload();
-      
+    $("#english_link").on("click", function () {
+        $.i18n.init({
+            lng: 'en',
+            ns: {
+                namespaces: ['ns.home'],
+                defaultNs: 'ns.home'
+            },
+            useLocalStorage: false,
+            debug: false
+        }, function () {
+            location.reload();
+
+        });
     });
-});
-      $("#arabic_link").on( "click", function() {
-      $.i18n.init({
-        lng: 'ar',
-        ns: { namespaces: ['ns.home'], defaultNs: 'ns.home'},
-        useLocalStorage: false,
-        debug: false
-    }, function() {
-       location.reload();
-      
+    $("#arabic_link").on("click", function () {
+        $.i18n.init({
+            lng: 'ar',
+            ns: {
+                namespaces: ['ns.home'],
+                defaultNs: 'ns.home'
+            },
+            useLocalStorage: false,
+            debug: false
+        }, function () {
+            location.reload();
+
+        });
     });
-});
-   
-    
-	
+
+
+
 });
 
-function loadMap(url)
-{
+function loadMap(url) {
     var json = null;
 
     $.ajax({
@@ -62,16 +73,17 @@ function loadMap(url)
         'url': url,
         'dataType': "json",
         'success': function (data) {
-             
+
             json = data;
         },
-        'error':function(jqXHR, textStatus, errorThrown) {
+        'error': function (jqXHR, textStatus, errorThrown) {
             console.log(textStatus, errorThrown);
-                }
+        }
     });
     return json;
 
 }
+
 function getObject(obj, key, val) {
     var objects = [];
     for (var i in obj) {

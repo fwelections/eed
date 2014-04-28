@@ -101,7 +101,8 @@
         "votes": " VOTES",
         "downloaddata": "Download the data",
         "winners": "Top Candidates",
-        "total": "National total : "
+        "total": "National total : ",
+        "candidatemap":"Candidate votes share "
     },
     "texts": {
         "round1about": "<p>On May 23-24 2012, more than 23 million voters cast ballots in Egypt's first post-revolution presidential election. Voters were able to choose from 13 candidates who met the eligibility criteria to appear on the ballot. Five candidates - Amr Moussa, Abdel Moneim Aboul-Fotouh, Hamdeen Sabahi, Ahmed Chafik, and Mohammed Morsi - earned the most votes in at least one of Egypt's 27 governorates. No candidate received the required 50%+1 to win outright, forcing a runoff election between the top two vote-recipients: Ahmed Chafik and Mohammed Morsi</p><p>The data used to power these visualizations was sourced from the website of the Supreme Presidential Election Commission in May 2012. The data was converted into CSV and GeoJSON formats by <a href='http://democracyinternational.com/' target='_blank'> Democracy International </a></p>",
