@@ -9,10 +9,12 @@ a {
   transition: color 0.1s linear 0s,background-color 0.1s linear 0s  !important;
 }
 
-a,a:focus, a:hover, a:active {
-  outline: 0;
-  text-decoration:none;
+ a:focus, a:hover, a:active {
+    outline: 0;
+    text-decoration:none;
     cursor:pointer;
+    color: #0b9c8f;
+    font-weight:bold;
   
 }
 table {
