@@ -41,7 +41,7 @@ DI aims to achieve this goal by:
 
 Folder structure
 ----
-** Github repositories**
+**Github repositories**
 
 The eed github repo has different branches for the different aspects of the site 
  - [gh-pages](https://github.com/fwelections/eed/tree/gh-pages) main branch that have the code base for the egyptelectiondata website
