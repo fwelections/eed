@@ -330,6 +330,12 @@ color:#999 !important;
 direction:rtl;
 
 }
+.layout-ar .top-bar-section ul li {
+float: right;
+}
+.layout-ar .top-bar .title-area {
+float: right;
+}
 .teaser-value{
     margin-left:10px;
 }
