@@ -121,7 +121,7 @@
         "notfounddesc": "The page you are looking for is not here ",
         "notfoundlink": "Go to Home page ",
         "highlightsTitle":"Percentage of votes and turnout in recent elections",
-        "hightlightsText":"<p>The line graphs below highlights trends in election results and voter turnout by governorate in the June 2012 presidential runoff elections, December 2012 constitutional referendum, and January 2014 constitutional referendum.</p><p> The first graph shows the percentage of votes received by Mohamed Morsi and Ahmed Chafik in the 2012 presidential runoff election and the percentage of 'yes' votes cast in the 2012 and 2014 constitutional referendums disaggregated by governorate.</p><p> The second graph shows the voter turnout percentages in the 2012 presidential runoff election, 2012 and 2014 constitutional referendums disaggregated by governate.</p> "
+        "hightlightsText":"<p>The line graphs below highlights trends in election results and voter turnout by governorate in the June 2012 presidential runoff elections, December 2012 constitutional referendum, and January 2014 constitutional referendum.</p><p> The first graph shows the percentage of votes received by Mohamed Morsi and Ahmed Chafik in the 2012 presidential runoff election and the percentage of 'yes' votes cast in the 2012 and 2014 constitutional referendums disaggregated by governorate. The second graph shows the voter turnout percentages in the 2012 presidential runoff election, 2012 and 2014 constitutional referendums disaggregated by governate.</p> "
     },
     "slides": {
         "slideonetitle": "Converting Data to Knowledge",
