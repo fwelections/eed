@@ -1,0 +1,72 @@
+{
+  "bounds": [
+    -180,
+    -85.0511,
+    180,
+    85.0511
+  ],
+  "center": [
+    0,
+    0,
+    2
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "turnout",
+    "template_teaser": "<div class=\"line\">\n<span class=\"label\">الدائرة الانتخابية</span>\n<span class=\"label label-inverse teaser-value\"> {{{gov_name}}} </span>\n</div>\n<div class=\"line\">\n<span class=\"label\"> عمرو موسى - مستقل </span>\n<span class=\"label label-success teaser-value\">{{{candidates_c4t}}} %</span>\n</div>\n<div class=\"line\">\n<span class=\"label\">عبد المنعم أبو الفتوح - مستقل</span>\n<span class=\"label label-success teaser-value\"> {{{candidates_c5t}}} %</span>\n</div>\n<div class=\"line\">\n<span class=\"label\">أحمد شفيق - مستقل</span>\n<span class=\"label label-success teaser-value\"> {{{candidates_c9t}}} %</span>\n</div>\n<div class=\"line\">\n<span class=\"label\">حمدين صباحي - حزب الكرامة </span>\n<span class=\"label label-success teaser-value\"> {{{candidates_c10t}}} %</span>\n</div>\n<div class=\"line\">\n<span class=\"label\">محمد مرسي - حزب الحرية والعدالة</span>\n<span class=\"label label-success teaser-value\"> {{{candidates_c13t}}} %</span>\n</div>\n",
+    "fields": [
+      "gov_name_en",
+      "candidates_c4t",
+      "candidates_c5t",
+      "candidates_c9t",
+      "candidates_c10t",
+      "candidates_c13t"
+    ]
+  },
+  "minzoom": 0,
+  "maxzoom": 22,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "id": "countries",
+      "name": "countries",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-countries.zip",
+        "type": "shape"
+      }
+    },
+    {
+      "geometry": "polygon",
+      "extent": [
+        24.692908496183087,
+        21.94127453563712,
+        36.90709480184087,
+        31.65596555701521
+      ],
+      "id": "turnout",
+      "class": "",
+      "Datasource": {
+        "file": "d:\\Projects\\candidates.geojson",
+        "id": "turnout",
+        "project": "candidates1",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "turnout"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "_basemap": "tunisia.gjhjd7gn",
+  "name": "",
+  "description": "",
+  "attribution": "",
+  "legend": "<div class='legend-title'>نسبة الأصوات المتحصل عليها أحمد شفيق  </div>\n<div class='legend-scale'>\n  <ul class='legend-labels'>\n    <li><span style='background:#45b0e9;'></span>0-10%</li>\n    <li><span style='background:#0090d9;'></span>11-24%</li>\n    <li><span style='background:#0c5b90;'></span> >25%</li>\n  \n  </ul>\n</div>\n<style type='text/css'>\n  .wax-legend .legend-title {\n    text-align: left;\n    margin-bottom: 5px;\n    font-weight: bold;\n    font-size: 90%;\n    }\n  .wax-legend .legend-scale ul {\n    margin: 0;\n    margin-bottom: 5px;\n    padding: 0;\n    float: left;\n    list-style: none;\n    }\n  .wax-legend .legend-scale ul li {\n    font-size: 80%;\n    list-style: none;\n    margin-left: 0;\n    line-height: 18px;\n    }\n  .wax-legend ul.legend-labels li span {\n    display: block;\n    float: left;\n    height: 18px;\n    width: 18px;\n    margin-right: 5px;\n    margin-left: 0;\n    }\n</style>"
+}
