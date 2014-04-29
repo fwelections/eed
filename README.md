@@ -172,7 +172,7 @@ Call function i18next.lng() returns current lng.
 
 [source](http://i18next.com/pages/doc_init.html)
 
-***example of a language file usage ***
+***example of a language file usage***
 ```
 {
     "app": {
@@ -404,7 +404,7 @@ Contributing
 -----------
 <br/>
 
-**Add a feature ? or a page  **  fork the repository and send a pull request 
+**Add a feature ? or a page**  fork the repository and send a pull request 
  
 **Love it?** Tell this little bird over at [`@DemocracyIntl`](https://twitter.com/DemocracyIntl) 
 
