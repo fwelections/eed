@@ -61,6 +61,10 @@ config(['$routeProvider', '$locationProvider',
             templateUrl: 'partials/p14.html',
             controller: 'p14Controller'
         });
+        $routeProvider.when('/presidential2014/:id', {
+            templateUrl: 'partials/p14details.html',
+            controller: 'p14Controllerdetails'
+        });
         $routeProvider.otherwise({
             redirectTo: '/404'
         });

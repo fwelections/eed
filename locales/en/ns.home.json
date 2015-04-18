@@ -3,11 +3,11 @@
         "name": "Egypt Election Data"
     },
     "menu": {
-        "pa2011":"Parliamentary 2011",
+        "pa2011": "Parliamentary 2011",
         "pr2012": "Presidential 2012",
         "r2012": "Referendum 2012",
         "r2014": "Referendum 2014",
-        "p2014":"Presidential 2014",
+        "p2014": "Presidential 2014",
         "highlights": "Highlights",
         "about": "About",
         "lang": "Lang"
@@ -26,10 +26,9 @@
         "C11": "Abdallah Al achal",
         "C12": "Khaled Ali",
         "C13": "Mohamed Morsi",
-        "C14":"Abdel Fattah el-Sisi",
-        "C10p":"Sabahi percentage",
-        "C14p":"Sisi percentage"
-
+        "C14": "Abdel Fattah el-Sisi",
+        "C10p": "Sabahi percentage",
+        "C14p": "Sisi percentage"
     },
     "data": {
         "districts": {
@@ -107,34 +106,35 @@
         "downloaddata": "Download the data",
         "winners": "Top Candidates",
         "total": "National total : ",
-        "candidatemap":"Candidate votes share "
+        "candidatemap": "Candidate votes share "
     },
     "texts": {
         "round1about": "<p>On May 23-24 2012, more than 23 million voters cast ballots in Egypt's first post-revolution presidential election. Voters were able to choose from 13 candidates who met the eligibility criteria to appear on the ballot. Five candidates - Amr Moussa, Abdel Moneim Aboul-Fotouh, Hamdeen Sabahi, Ahmed Chafik, and Mohammed Morsi - earned the most votes in at least one of Egypt's 27 governorates. No candidate received the required 50%+1 to win outright, forcing a runoff election between the top two vote-recipients: Ahmed Chafik and Mohammed Morsi</p><p>The data used to power these visualizations was sourced from the website of the<a href='https://www.elections.eg/' target='_blank'> Supreme Presidential Election Commission</a> in May 2012. The data was converted into CSV and GeoJSON formats by <a href='http://democracyinternational.com/' target='_blank'> Democracy International </a></p>",
         "round1detailsabout": "<p>On May 23-24 2012, more than 23 million voters cast ballots in Egypt's first post-revolution presidential election. Voters were able to choose from 13 candidates who met the eligibility criteria to appear on the ballot. Five candidates - Amr Moussa, Abdel Moneim Aboul-Fotouh, Hamdeen Sabahi, Ahmed Chafik, and Mohammed Morsi - earned the most votes in at least one of Egypt's 27 governorates. No candidate received the required 50%+1 to win outright, forcing a runoff election between the top two vote-recipients: Ahmed Chafik and Mohammed Morsi</p><p>The data used to power these visualizations was sourced from the website of the<a href='https://www.elections.eg/' target='_blank'> Supreme Presidential Election Commission</a> in May 2012. The data was converted into CSV and GeoJSON formats by <a href='http://democracyinternational.com/' target='_blank'> Democracy International </a></p>",
         "round2about": "<p>On June 16-17, 2012, more than 25 million voters cast ballots in a presidential runoff election between Ahmed Chafik and Mohamed Morsi. Receiving slightly more than 51% of all valid ballots cast, Mohamed Morsi became the first elected president of post-revolution Egypt.</p><p>The data used to power these visualizations was sourced from the website of the<a href='https://www.elections.eg/' target='_blank'> Supreme Presidential Election Commission</a> in June 2012. The data was converted into CSV and GeoJSON formats by <a href='http://democracyinternational.com/' target='_blank'> Democracy International </a>.</p> ",
-        "round2detailabout":" <p>On June 16-17, 2012, more than 25 million voters cast ballots in a presidential runoff election between Ahmed Chafik and Mohamed Morsi. Receiving slightly more than 51% of all valid ballots cast, Mohamed Morsi became the first elected president of post-revolution Egypt.</p><p>The data used to power these visualizations was sourced from the website of the<a href='https://www.elections.eg/' target='_blank'> Supreme Presidential Election Commission</a> in June 2012. The data was converted into CSV and GeoJSON formats by <a href='http://democracyinternational.com/' target='_blank'> Democracy International </a>.</p> ",
+        "round2detailabout": " <p>On June 16-17, 2012, more than 25 million voters cast ballots in a presidential runoff election between Ahmed Chafik and Mohamed Morsi. Receiving slightly more than 51% of all valid ballots cast, Mohamed Morsi became the first elected president of post-revolution Egypt.</p><p>The data used to power these visualizations was sourced from the website of the<a href='https://www.elections.eg/' target='_blank'> Supreme Presidential Election Commission</a> in June 2012. The data was converted into CSV and GeoJSON formats by <a href='http://democracyinternational.com/' target='_blank'> Democracy International </a>.</p> ",
         "referendum12about": "<p>On December 15 and 22, 2012, more than 16 million voters cast ballots in a referendum on a draft constitution. The draft constitution, publicly supported by President Mohamed Morsi, was approved by 63.8% of voters. </p><p>The data used to power these visualizations was sourced from the website of the<a href='https://www.elections.eg/' target='_blank'> Supreme Presidential Election Commission</a> in June 2012. The data was converted into CSV and GeoJSON formats by <a href='http://democracyinternational.com/' target='_blank'> Democracy International </a>.</p>",
         "referendumdetailabout": "<p>On December 15 and 22, 2012, more than 16 million voters cast ballots in a referendum on a draft constitution. The draft constitution, publicly supported by President Mohamed Morsi, was approved by 63.8% of voters. </p><p>The data used to power these visualizations was sourced from the website of the<a href='https://www.elections.eg/' target='_blank'> Supreme Presidential Election Commission</a> in June 2012. The data was converted into CSV and GeoJSON formats by <a href='http://democracyinternational.com/' target='_blank'> Democracy International </a>.</p>",
         "referendum14about": "<p>On January 14-15, 2014, more than 20 million voters cast ballots in a referendum on a draft constitution. The draft constitution, publicly supported by Field Marshal Abdel Fattah el-Sisi, was approved by 98.1% of voters.<br/>The data used to power these visualizations was sourced from the website of the<a href='https://www.elections.eg/' target='_blank'> Supreme Presidential Election Commission</a> in June 2012. </p><p>The data was converted into CSV and GeoJSON formats by <a href='http://democracyinternational.com/' target='_blank'> Democracy International </a>. </p>",
-        "morsi":"Mohamed Morsi is the Chairman of the <a href='http://en.wikipedia.org/wiki/Freedom_and_Justice_Party_(Egypt)' title='Freedom and Justice Party (Egypt)'>Freedom and Justice Party</a> (FJP), a political party that was founded by the <a href='http://en.wikipedia.org/wiki/Muslim_Brotherhood' title='Muslim Brotherhood'>Muslim Brotherhood</a> after the <a href='http://en.wikipedia.org/wiki/2011_Egyptian_revolution' title=2011 Egyptian revolution'   >2011 Egyptian revolution</a>, since 30 April 2011.  He was a Member of Parliament from 2000 to 2005.",
-        "shafik":"<a href='http://en.wikipedia.org/wiki/Ahmed_Shafik' title='Ahmed Shafik'>Ahmed Shafik</a> officially launched his presidential campaign on 2 November 2011. He was the last <a href='http://en.wikipedia.org/wiki/Prime_Minister_of_Egypt' title='Prime Minister of Egypt'>Prime Minister</a> appointed by <a href='http://en.wikipedia.org/wiki/Hosni_Mubarak' title='Hosni Mubarak'>Hosni Mubarak</a> after the beginning of the <a href='http://en.wikipedia.org/wiki/2011_Egyptian_revolution' title='2011 Egyptian revolution' class='mw-redirect'>2011 revolution</a> in January. "
+        "morsi": "Mohamed Morsi is the Chairman of the <a href='http://en.wikipedia.org/wiki/Freedom_and_Justice_Party_(Egypt)' title='Freedom and Justice Party (Egypt)'>Freedom and Justice Party</a> (FJP), a political party that was founded by the <a href='http://en.wikipedia.org/wiki/Muslim_Brotherhood' title='Muslim Brotherhood'>Muslim Brotherhood</a> after the <a href='http://en.wikipedia.org/wiki/2011_Egyptian_revolution' title=2011 Egyptian revolution'   >2011 Egyptian revolution</a>, since 30 April 2011.  He was a Member of Parliament from 2000 to 2005.",
+        "shafik": "<a href='http://en.wikipedia.org/wiki/Ahmed_Shafik' title='Ahmed Shafik'>Ahmed Shafik</a> officially launched his presidential campaign on 2 November 2011. He was the last <a href='http://en.wikipedia.org/wiki/Prime_Minister_of_Egypt' title='Prime Minister of Egypt'>Prime Minister</a> appointed by <a href='http://en.wikipedia.org/wiki/Hosni_Mubarak' title='Hosni Mubarak'>Hosni Mubarak</a> after the beginning of the <a href='http://en.wikipedia.org/wiki/2011_Egyptian_revolution' title='2011 Egyptian revolution' class='mw-redirect'>2011 revolution</a> in January. ",
+        "p14about": "<p>A <b>presidential election</b> in <a href='http://en.wikipedia.org/wiki/Egypt' title='Egypt'>Egypt</a> took place between 26 and 28 May 2014. There were only two candidates, former Egyptian <a href='http://en.wikipedia.org/wiki/List_of_Ministers_of_Defence_of_Egypt' title='List of Ministers of Defence of Egypt'>defence minister</a> <a href='http://en.wikipedia.org/wiki/Abdel_Fattah_el-Sisi' title='Abdel Fattah el-Sisi'>Abdel Fattah el-Sisi</a> and <a href='http://en.wikipedia.org/wiki/Egyptian_Popular_Current' title='Egyptian Popular Current'>Egyptian Popular Current</a> candidate <a href='http://en.wikipedia.org/wiki/Hamdeen_Sabahi' title='Hamdeen Sabahi'>Hamdeen Sabahi</a>.<p>The data used to power this page was sourced from the website of the<a href='https://www.elections.eg/' target='_blank'> Supreme Presidential Election Commission</a> in April 2015."
     },
     "pages": {
         "abouttitle": "About",
         "aboutcontent": "<p>Egypt Election Data is a project to collect, open, visualize, and analyze election-related data on an ongoing basis. The project is being implemented by <a href='http://democracyinternational.com/' target='_blank'> Democracy International </a> (DI), a non-partisan organization that supports democracy and good governance worldwide.</p><p>The goal of Egypt Election Data is to present a range of stakeholders - election officials, government officials, political contestants, civil society organizations, media, citizens, and the international community - with better information to make better decisions that lead to better outcomes. </p><p>DI aims to achieve this goal by:<ul><li>Creating a centralized hub of election-related data, maps, and analysis that facilitate data-driven decision-making to improve electoral processes.</li><li> Presenting information in a highly accessible way so that stakeholders can measure progress and identify trends from one election cycle to the next.</li><li>Providing a meaningful lens through which electoral developments or election observation findings can be contextualized and understood.</li></ul> </p><p>Egypt Election Data is an open source project hosted on Github. All data used on Egypt Election Data is licensed under CC By S.A 3.0 and can be downloaded <a target='_blank' href='https://github.com/fwelections/eg-data'> here</a>. </p>",
         "notfounddesc": "The page you are looking for is not here ",
         "notfoundlink": "Go to Home page ",
-        "highlightsTitle":"Percentage of votes and turnout in recent elections",
-        "hightlightsText":"<p>The line graphs below highlights trends in election results and voter turnout by governorate in the June 2012 presidential runoff elections, December 2012 constitutional referendum, and January 2014 constitutional referendum.</p><p> The first graph shows the percentage of votes received by Mohamed Morsi and Ahmed Chafik in the 2012 presidential runoff election and the percentage of 'yes' votes cast in the 2012 and 2014 constitutional referendums disaggregated by governorate. The second graph shows the voter turnout percentages in the 2012 presidential runoff election, 2012 and 2014 constitutional referendums disaggregated by governate.</p> "
+        "highlightsTitle": "Percentage of votes and turnout in recent elections",
+        "hightlightsText": "<p>The line graphs below highlights trends in election results and voter turnout by governorate in the June 2012 presidential runoff elections, December 2012 constitutional referendum, and January 2014 constitutional referendum.</p><p> The first graph shows the percentage of votes received by Mohamed Morsi and Ahmed Chafik in the 2012 presidential runoff election and the percentage of 'yes' votes cast in the 2012 and 2014 constitutional referendums disaggregated by governorate. The second graph shows the voter turnout percentages in the 2012 presidential runoff election, 2012 and 2014 constitutional referendums disaggregated by governate.</p> "
     },
     "slides": {
         "slideonetitle": "Converting Data to Knowledge",
         "slideonesub": "A hub of election-related data, maps, and analysis that can facilitate data-driven decision-making to improve electoral processes",
         "slidetwotitle": "Making Data Digestible",
         "slidetwosub": "Information presented in a highly accessible way so  that stakeholders can identify trends and measure progress from one election cycle to the next.",
-         "slidethreetitle": "Using Data as Infrastructure",
+        "slidethreetitle": "Using Data as Infrastructure",
         "slidethreesub": "A meaningful lens through which electoral developments  and observation findings can be contextualized and understood.",
-        "photocredit":"PHOTO CREDIT"
+        "photocredit": "PHOTO CREDIT"
     }
 }

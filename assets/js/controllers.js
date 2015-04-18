@@ -576,12 +576,7 @@ controller('presController', ['districtList',
                     $('.animate-progress-bar').each(function () {
                         $(this).css('width', $(this).attr("data-percentage"));
                     });
-                    if (i18n.detectLanguage() == 'ar') {
-                        switchLayer_ar("moussa");
-                    } else {
 
-                        switchLayer("moussa");
-                    }
 
 
                 }, 500);
@@ -589,6 +584,55 @@ controller('presController', ['districtList',
                     $(".partials").i18n();
 
                 }, 600);
+            });
+
+        }
+    ])
+    .controller('p14Controllerdetails', ['$scope', '$routeParams','p14Results', 'p14ResultsDetail',
+        function ($scope, $routeParams,p14Results, p14ResultsDetail) {
+
+
+                    $scope.district = $routeParams.id;
+                    // Very dirty way to do  this
+                    var promise = p14Results.getResults();
+                    promise.then(function (data) {
+                        // getting old results again (useless )
+                        $scope.current = null;
+                        for (var i = 0; i < data.length; i++)
+                            if (data[i].did == $scope.district && $scope.district > 1)
+                                $scope.current = data[i];
+                        if ($scope.current == null)
+                            window.location = '#/presidential2014';
+
+
+                        var prem = p14ResultsDetail.getResults($scope.district);
+
+                        prem.then(function (data) {
+
+                            $scope.results = data;
+                            $("html,body").animate({
+                                scrollTop: 0
+                            }, 1000);
+                          });
+
+                          setTimeout(function () {
+                              $('.animate-number').each(function () {
+                                  $(this).animateNumbers($(this).attr("data-value"), true, parseInt($(this).attr("data-animation-duration")));
+                              });
+                              $('.animate-progress-bar').each(function () {
+                                  $(this).css('width', $(this).attr("data-percentage"));
+                              });
+
+
+
+                          }, 500);
+                          setTimeout(function () {
+                              $(".partials").i18n();
+
+                          }, 600);
+
+
+
             });
 
         }
