@@ -228,3 +228,43 @@ Services.factory('Highlights', function ($q) {
     };
     return this;
 });
+Services.factory('p14Results', function ($q) {
+    // this.getDistricts= function
+    var deferred = $q.defer();
+    var ds = new Miso.Dataset({
+        url: "data/p14/all.csv",
+        delimiter: ","
+    });
+    ds.fetch({
+        success: function () {
+            var results = this.toJSON();
+            deferred.resolve(results);
+
+        }
+    });
+    this.getResults = function () {
+        return deferred.promise;
+    };
+    return this;
+});
+Services.factory('p14ResultsDetail', function ($q) {
+    // this.getDistricts= function
+    var deferred = $q.defer();
+
+    this.getResults = function (id) {
+        var url = "data/p14/details/" + id + ".csv";
+        var ds = new Miso.Dataset({
+            url: url,
+            delimiter: ","
+        });
+        ds.fetch({
+            success: function () {
+                var results = this.toJSON();
+                deferred.resolve(results);
+
+            }
+        });
+        return deferred.promise;
+    };
+    return this;
+});
