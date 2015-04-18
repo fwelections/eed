@@ -25,7 +25,11 @@
         "C10": "Hamdeen Sabahi",
         "C11": "Abdallah Al achal",
         "C12": "Khaled Ali",
-        "C13": "Mohamed Morsi"
+        "C13": "Mohamed Morsi",
+        "C14":"Abdel Fattah el-Sisi",
+        "C10p":"Sabahi percentage",
+        "C14p":"Sisi percentage"
+
     },
     "data": {
         "districts": {

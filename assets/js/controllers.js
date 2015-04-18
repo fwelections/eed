@@ -168,10 +168,10 @@ controller('presController', ['districtList',
                 return high;
             }
             $scope.district = $routeParams.id;
-            // Very dirty way to do  this 
+            // Very dirty way to do  this
             var promise = RoundOneResults.getResults();
             promise.then(function (data) {
-                // getting old results again (useless ) 
+                // getting old results again (useless )
                 $scope.current = null;
                 for (var i = 0; i < data.length; i++)
                     if (data[i].did == $scope.district && $scope.district > 1)
@@ -268,7 +268,7 @@ controller('presController', ['districtList',
                     lineColors: ['#0aa699', '#777'],
                     parseTime: false,
                 });
-                // custom js 
+                // custom js
                 setTimeout(function () {
                     $('.panel-3d').find('.front .btn').on('click', function () {
                         $(this).closest('.panel-3d').addClass('panel-flip');
@@ -303,10 +303,10 @@ controller('presController', ['districtList',
     .controller('presControllerRound2details', ['$scope', '$routeParams', 'RoundTwoResults', 'RoundTwoResultsDetail',
         function ($scope, $routeParams, RoundTwoResults, RoundTwoResultsDetail) {
             $scope.district = $routeParams.id;
-            // Very dirty way to do  this 
+            // Very dirty way to do  this
             var promise = RoundTwoResults.getResults();
             promise.then(function (data) {
-                // getting old results again (useless ) 
+                // getting old results again (useless )
                 $scope.current = null;
                 for (var i = 0; i < data.length; i++)
                     if (data[i].did == $scope.district && $scope.district > 1)
@@ -447,10 +447,10 @@ controller('presController', ['districtList',
         function ($scope, $routeParams, RefResults, RefResultsDetail) {
             console.log($routeParams.id);
             $scope.district = $routeParams.id;
-            // Very dirty way to do  this 
+            // Very dirty way to do  this
             var promise = RefResults.getResults();
             promise.then(function (data) {
-                // getting old results again (useless ) 
+                // getting old results again (useless )
                 $scope.current = null;
                 for (var i = 0; i < data.length; i++)
                     if (data[i].did == $scope.district && $scope.district > 1)
@@ -558,6 +558,38 @@ controller('presController', ['districtList',
     .controller('ErrorController', [
         function () {
             console.log("error");
+
+        }
+    ])
+    .controller('p14Controller', ['p14Results', '$scope',
+        function (p14Results, $scope) {
+
+            var promise = p14Results.getResults();
+            promise.then(function (data) {
+
+                $scope.results = data;
+                console.log($scope.results[28].Voters);
+                setTimeout(function () {
+                    $('.animate-number').each(function () {
+                        $(this).animateNumbers($(this).attr("data-value"), true, parseInt($(this).attr("data-animation-duration")));
+                    });
+                    $('.animate-progress-bar').each(function () {
+                        $(this).css('width', $(this).attr("data-percentage"));
+                    });
+                    if (i18n.detectLanguage() == 'ar') {
+                        switchLayer_ar("moussa");
+                    } else {
+
+                        switchLayer("moussa");
+                    }
+
+
+                }, 500);
+                setTimeout(function () {
+                    $(".partials").i18n();
+
+                }, 600);
+            });
 
         }
     ]);

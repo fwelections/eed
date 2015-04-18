@@ -57,6 +57,10 @@ config(['$routeProvider', '$locationProvider',
             templateUrl: 'partials/404.html',
             controller: 'ErrorController'
         });
+        $routeProvider.when('/presidential2014', {
+            templateUrl: 'partials/p14.html',
+            controller: 'p14Controller'
+        });
         $routeProvider.otherwise({
             redirectTo: '/404'
         });
