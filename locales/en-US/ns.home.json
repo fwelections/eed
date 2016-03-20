@@ -3,6 +3,7 @@
         "name": "Egypt Election Data"
     },
     "menu": {
+        "results":"results",
         "pa2011": "Parliamentary election 2011",
         "pr2012": "Presidential election 2012",
         "r2012": "Referendum 2012",

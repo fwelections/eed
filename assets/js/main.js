@@ -60,8 +60,6 @@ $(document).ready(function () {
         });
     });
 
-
-
 });
 
 function loadMap(url) {

@@ -1,0 +1,213 @@
+<style>
+      /*http://www.d3noob.org/2013/01/adding-drop-shadow-to-allow-text-to.html*/
+      text.shadow {
+     
+    }
+    /* D3 tips */  
+    .d3-tip {
+      line-height: 1;
+      font-weight: bold;
+      padding: 12px;
+      background: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      border-radius: 2px;
+      text-align: center;
+    }
+    /* Creates a small triangle extender for the tooltip */
+    /*.d3-tip:after {
+      box-sizing: border-box;
+      display: inline;
+      font-size: 10px;
+      width: 100%;
+      line-height: 1;
+      color: rgba(0, 0, 0, 0.8);
+      content: "\25BC";
+      position: absolute;
+      text-align: center;
+    }*/
+    /* Style northward tooltips differently */
+    .d3-tip.n:after {
+      margin: -1px 0 0 0;
+      top: 100%;
+      left: 0;
+    }
+    .stronger {
+      color: yellow;
+    }
+        </style>
+
+<div class="row">
+
+    <div class="large-7 small-12 columns">
+        <div class="maps-container legend-up ">
+            <div id="map"></div>
+
+        </div>
+       
+    </div>
+    <div class="large-5 small-12 columns">
+        <div class="block info ">
+            <div class="block-title">
+                <h4> Background</h4>	
+            </div>
+            <div class="block-body" style="min-height: 275px;">
+            <p>For these elections, the country was divided into two geographic regions. The first region voted on October 18 and 19, with runoffs on October 27 and 28, and the other half of the country voted November 22 and 23, with runoffs on December 1 and 2. Following the first stage, administrative courts ordered revotes in four constituencies; re-voting took place on December 6 and 7, with runoffs scheduled for December 15 and 16.
+</p>
+            <p>The unique Egyptian electoral system provides that the 596-member House of Representatives is composed of 448 members elected from 205 districts, each with one to four seats; 120 members elected on a winner-take-all basis from lists running in four large districts; and up to 28 members that may be appointed by the president. In the individual constituencies, there are runoffs if a sufficient number of candidates do not achieve a majority in the first round. For the four list districts, the list that obtains a majority of the votes wins all of the available seats in that district; if no list obtains a majority, a runoff is held between the top two lists.</p>
+            
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="row" style="margin-top:15px">
+	<div class="block info">
+            <div class="block-title">
+                <h4> Elections Schedule</h4>
+
+            </div>
+            <div class="block-body">
+
+<iframe src='//cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1sVn8leTRQ7pTfV6CIEkYOBkei24wBEk2-jXvmsBnXeg&font=Default&lang=en&initial_zoom=2&height=650' width='100%' height='650' frameborder='0'></iframe>
+            </div>
+        </div>
+</div>
+
+<div class="row" style="margin-top:15px">
+	<div class="block info">
+            <div class="block-title">
+                <h4> Turnout map </h4>
+
+            </div>
+            <div class="block-body">
+              <div id='map1'></div>
+            </div>
+        </div>
+</div>
+<div class="row" style="margin-top:15px">
+<div class="large-8 small-12 columns">
+<div class="block info">
+            <div class="block-title">
+                <h4> Results and composition of the House of Representatives </h4>
+
+            </div>
+            <div class="block-body">
+              <div id="hem" style="width:600px;margin-top:35px;"></div>
+			<div id="legend" style="width:400px;padding:15px;margin-left:100px;">
+			</div>
+        </div>
+</div>
+</div>
+<div class="large-4 small-12 columns">
+<div class="block info">
+            <div class="block-title">
+                <h4>About</h4>
+
+            </div>
+            <div class="block-body">
+            <p>The parliament is made up of 596 seats, with 448 seats elected through the individual candidacy system, 120 elected through winner-take-all party lists (with quotas for youth, women, Christians, and workers) and 28 selected by the president.</p>
+            <p>The chart on the left represents the 568 winning candidates and their parties</p>
+             <div class="data-zone">
+                    <h4>Download data</h4>
+                    <a href="./data/geom/egypt.geojson" download="egypt.geojson" target="_blank" class="button expand"> Egypt map <i class="fa fa-map-marker" style="
+    margin-left: 20px;
+"></i>&nbsp;&nbsp;</a>
+                    <br/>
+                    <a href="./data/composition.csv" download="par15.csv" target="_blank" class="expand secondary button">Results data<i class="fa fa-paste" style="
+    margin-left: 20px;
+"></i> </a> 
+                    <br/>
+                    <a href="./data/turnout.csv" download="turnout.csv" target="_blank" class="primary button expand"> Turnout data<i class="fa fa-download" style="
+    margin-left: 20px;
+"></i>&nbsp;&nbsp; </a> 
+                </div>
+
+
+			</div>
+        </div>
+</div>
+</div>
+	
+</div>
+
+<script type="text/javascript">
+   
+        var refGrid = L.mapbox.gridLayer('tunisia.d8i041e5');
+        var refControl = L.mapbox.gridControl(refGrid, {
+            follow: false
+        });
+        var map = L.mapbox.map('map', 'tunisia.gjhjd7gn,tunisia.d8i041e5')
+            .addControl(refControl)
+            .setView([27.440, 31.211], 6);
+        var refGrid1 = L.mapbox.gridLayer('tunisia.7t4lojah');
+        var refControl1 = L.mapbox.gridControl(refGrid1, {
+            follow: false
+        });
+        var map = L.mapbox.map('map1', 'tunisia.gjhjd7gn,tunisia.7t4lojah')
+            .addControl(refControl1)
+            .setView([27.440, 31.211], 6);
+
+
+         ///
+
+         d3.csv("data/composition.csv",function(error,data) {
+  
+    var hemicycle = [{
+      //"n":[9,13,16,20,23],
+      "n": [9,13,17,21,24,27,30,33,37,40,44,47,51,55,58,62],
+      "gap": 1.20,
+      "widthIcon": 0.39,
+      "width": 550,
+      "people": data
+    }];
+   /* Initialize tooltip */	
+    tip = d3.tip().attr("class", "d3-tip").html(function(d) {
+   	
+      nfo_name = '<span class="candidate-name">'+ d["name"] + '</span>';
+      nfo_party = '<div style="text-align:center>"<span class="label label-danger ">'+ d["party"] + '</span></div>'
+
+
+      return nfo_name + '<br/><br/> ' + nfo_party;
+    }); 
+    var w=550,h=305,
+        svg=d3.select("#hem")
+            .append("svg")
+            .attr("width",w)
+            .attr("height",h);
+    var hc = d3.hemicycle()
+                .n(function(d) {return d.n;})
+                .gap(function(d) {return d.gap;})
+                .widthIcon(function(d) {return d.widthIcon;})
+                .width(function(d) {return d.width;})
+                .people(function(d) {return d.people;});  
+    
+    var item = svg.selectAll(".hc")
+          .data(hemicycle)
+       .enter()
+        .append("svg:g")
+        .call(hc);
+        
+	/* Invoke the tip in the context of your visualization */
+    svg.call(tip);
+	
+	// Add tooltip div
+    var div = d3.select("body").append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 1e-6);
+    
+    
+    /*inhtml = '';
+    for (k in data) {
+      if (k == 12) break;
+      group = data[k];
+      if (k % 4 == 0) {
+        inhtml = inhtml + "<div class='row'>";
+      }
+      inhtml = inhtml + '<div class="col-xs-3"><i class="fa fa-user" style="color:' + group['color'] + ';font-size:15px;">&nbsp;</i>' + group["abbreviation"] + "</div> ";
+      if (k % 4 == 3) {
+        inhtml = inhtml + "</div>";
+      }
+    }
+    $("#legendin").html(inhtml)*/
+  })
+</script>

@@ -6,14 +6,10 @@ angular.module('eedApp.controllers', []).
 controller('presController', ['districtList',
     function (districtList) {
 
-
     }
 ])
     .controller('parController', ['ParResults', '$scope',
         function (ParResults, $scope) {
-
-
-
 
             var promise = ParResults.getResults();
             promise.then(function (data) {
@@ -347,6 +343,7 @@ controller('presController', ['districtList',
                     $("html,body").animate({
                         scrollTop: 0
                     }, 1000);
+                    
 
                     setTimeout(function () {
                         $('.panel-3d').find('.front .btn').on('click', function () {
@@ -558,6 +555,22 @@ controller('presController', ['districtList',
     .controller('ErrorController', [
         function () {
             console.log("error");
+
+        }
+    ])
+    .controller('resultsController', [
+        function () {
+
+         
+            console.log("results");
+
+        }
+    ])
+    .controller('par15Controller', [
+        function () {
+
+         
+            console.log("par15");
 
         }
     ])
