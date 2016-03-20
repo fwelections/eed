@@ -11,11 +11,19 @@ angular.module('eedApp', [
 ]).
 config(['$routeProvider', '$locationProvider',
     function ($routeProvider, $locationProvider) {
-        $routeProvider.when('/', {
-            templateUrl: 'partials/index.html' /*, controller: 'parController'*/
-        });
+        //$routeProvider.when('/', {
+        //    templateUrl: 'partials/index.html' /*, controller: 'parController'*/
+       // });
         $routeProvider.when('/presidential2012', {
             redirectTo: '/presidential2012/round1'
+        });
+        $routeProvider.when('/', {
+            templateUrl: 'partials/results-timeline.html',
+            controller: 'resultsController'
+        });
+        $routeProvider.when('/parliamentary2015', {
+            templateUrl: 'partials/parliamentary2015.html',
+            controller: 'par15Controller'
         });
         $routeProvider.when('/presidential2012/round1', {
             templateUrl: 'partials/presidential12/round1.html',
